@@ -1,0 +1,2701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_up"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_corners">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_toolbar_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/profileplaceholder"
+                android:visibility="gone"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/nox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/patua_one"
+                android:text="NOX GAMING"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/pubg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/patua_one"
+                android:text="PUBG MOBILE"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/patua_one"
+                android:text="PUBG LITE"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/first_linearlayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/view_shadow"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/small_image"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/pankajlogo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="MATCH"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/matchno"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="#1"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="DATE "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="08/06/2020"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="TIME "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="9:00 am"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="Registration :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/registration"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="OPEN"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="ID :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text=""
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="PASSWORD :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/password"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text=""
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/first_prizepoolanim"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                android:drawablePadding="0dp"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:paddingLeft="25dp"
+                                android:text="PRIZE POOL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="PERKILL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ENTRY FEE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/prizepool"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="1180 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/perkill"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="10 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/entryfee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="15 Rs."
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="0dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TYPE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MODE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MAP"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="SQUAD BATTLE"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/mode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TPP"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/map"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ERANGEL"
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone" />
+
+                    <TextView
+
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/patua_one"
+                        android:gravity="center"
+                        android:text="only 100 spots left"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/watchnow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Join Player"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Match Rule"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/joinnow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:text="JOIN Match"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second_linearlayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/view_shadow2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageone2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/pankajlogo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="MATCH "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/matchno2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="#1"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="DATE "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/date2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="08/06/2020"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="TIME "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/time2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="9:00 am"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="Registration :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/registration2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="OPEN"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="ID :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/id2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="1213434"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="PASSWORD :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/password2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="1234"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/table2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginVertical="30dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/second_prizepoolanim"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                android:drawablePadding="0dp"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:paddingLeft="25dp"
+                                android:text="PRIZE POOL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="PERKILL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ENTRY FEE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/prizepool2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="1180 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/perkill2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="10 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/entryfee2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="15 Rs."
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="0dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TYPE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MODE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MAP"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/type2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="SQUAD BATTLE"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/mode2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TPP"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/map2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ERANGEL"
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekBar2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/patua_one"
+                        android:gravity="center"
+                        android:text="only 100 spots left"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/watchnow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="join Player"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/info2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Match Rule"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/joinnow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:text="JOIN Match"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/view_shadow3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/pankajlogo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="MATCH "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/matchno3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="#1"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="DATE "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/date3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="08/06/2020"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="TIME "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/time3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="9:00 am"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="Registration :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/registration3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="OPEN"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="ID :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/id3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="."
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="PASSWORD :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/password3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="."
+                                    android:textColor="@color/whiteblack"
+
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/table3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginVertical="30dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/third_prizepoolanim"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                android:drawablePadding="0dp"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:paddingLeft="25dp"
+                                android:text="PRIZE POOL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="PERKILL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ENTRY FEE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/prizepool3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="1180 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/perkill3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="10 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/entryfee3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="15 Rs."
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="0dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TYPE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MODE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MAP"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/type3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="SQUAD BATTLE"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/mode3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TPP"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/map3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ERANGEL"
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekBar3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/patua_one"
+                        android:gravity="center"
+                        android:text="only 100 spots left"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/watchnow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Join Player"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/info3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Match Rule"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/joinnow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:text="JOIN Match"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/view_shadow4"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/pankajlogo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="MATCH "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/matchno4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="#1"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="DATE "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/date4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="08/06/2020"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="TIME "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/time4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="9:00 am"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="Registration :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/registration4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="OPEN"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="ID :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/id4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="1213434"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="PASSWORD :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/password4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="1234"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/table4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginVertical="30dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/four_prizepoolanim"
+                                android:layout_width="60dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                android:drawablePadding="0dp"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:paddingLeft="25dp"
+                                android:text="PRIZE POOL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="PERKILL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ENTRY FEE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/prizepool4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="1180 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/perkill4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="10 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/entryfee4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="15 Rs."
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="0dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TYPE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MODE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MAP"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/type4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="SQUAD BATTLE"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/mode4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TPP"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/map4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ERANGEL"
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekBar4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:max="28"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/patua_one"
+                        android:gravity="center"
+                        android:text="only 28 spots left"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/watchnow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Join Player"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/info4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Match Rule"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/joinnow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:text="JOIN Match"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/view_shadow5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageone5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/pankajlogo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="MATCH "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/matchno5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="#1"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="DATE "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/date5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="08/06/2020"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="TIME "
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/time5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="9:00 am"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="Registration :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/registration5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="OPEN"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="ID :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/id5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="1213434"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="PASSWORD :-"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/password5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/patua_one"
+                                    android:text="1234"
+                                    android:textColor="@color/whiteblack"
+                                    android:textSize="12dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/table5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginVertical="30dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/five_prizepoolanim"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                                android:drawablePadding="0dp"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:paddingLeft="25dp"
+                                android:text="PRIZE POOL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="PERKILL"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ENTRY FEE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/prizepool5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="1180 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/perkill5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="10 Rs."
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/entryfee5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="15 Rs."
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="0dp">
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TYPE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MODE"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="MAP"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/type5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="SQUAD BATTLE"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/mode5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="TPP"
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/map5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+
+                                android:fontFamily="@font/patua_one"
+                                android:gravity="center"
+                                android:text="ERANGEL"
+
+                                android:textColor="@color/textcolorr"
+                                android:textSize="12dp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <SeekBar
+                        android:id="@+id/seekBar5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:max="8" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="@font/patua_one"
+                        android:gravity="center"
+                        android:text="only 8 Player left"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/matchfull_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seekBar"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/patua_one"
+                        android:gravity="center"
+                        android:text="MATCH FULL"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/watchnow5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Join Player"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/info5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="Match Rule"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/joinnow5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/patua_one"
+                            android:gravity="center"
+                            android:text="JOIN Match"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart" />
+
+                <ImageView
+                    android:id="@+id/image7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart" />
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_add">
+
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</RelativeLayout>

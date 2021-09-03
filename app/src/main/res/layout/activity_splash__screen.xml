@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pankajbg"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    tools:context="com.pankajranag.rana_gaming.com.pankaj.rana_gaming.Activity.splash_Screen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/pankajlogo"
+            android:layout_gravity="center"/>
+
+        <com.romainpiel.shimmer.ShimmerTextView
+            android:id="@+id/shimmer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="NOX GAMING"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            app:reflectionColor="#f00" />
+
+        <TextView
+            android:id="@+id/win_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/patua_one"
+            android:text="Win Reward"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <GridView
+
+        android:id="@+id/GV_Images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </GridView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/profile_image"/>
+    <Button
+        android:id="@+id/subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:fontFamily="@font/patua_one"
+        android:text="Subscribe"
+
+        android:textSize="0dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

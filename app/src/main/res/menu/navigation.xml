@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/player"
+        android:icon="@drawable/wallet"
+        android:title="Wallet" />
+
+    <item
+        android:id="@+id/top"
+        android:icon="@drawable/ic_mood_black_24dp"
+        android:title="Announcement*" />
+    <item
+        android:id="@+id/refer"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="share" />
+
+
+
+    <item
+        android:id="@+id/room"
+        android:icon="@drawable/ic_record_voice_over_black_24dp"
+        android:title="How to join custom Room?" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_screen_lock_portrait_black_24dp"
+        android:title="LogOut" />
+
+    <item xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav_item1"
+        android:actionLayout="@layout/switch_layout"
+        android:icon="@drawable/darkmode"
+        android:iconTint="@color/switchbutton"
+        android:title="Dark Mode"
+        app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_item2"
+        android:icon="@drawable/darkmode"
+        android:title="Light Mode"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notification" />
+
+
+    <item
+        android:iconTint="@color/textcolorr"
+        android:title="Communicate">
+
+
+        <menu>
+            <item
+                android:id="@+id/support"
+                android:icon="@drawable/whatsapp"
+                android:title="Join whatsApp Group" />
+            <item
+                android:id="@+id/telegram"
+                android:icon="@drawable/telegram"
+                android:title="Join Telegram Group" />
+            <item
+                android:id="@+id/instagram"
+                android:icon="@drawable/instagram"
+                android:title="Follow on Instagram" />
+
+
+
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/wallet"
+                android:title="Reddem Coins" />
+        </menu>
+    </item>
+
+    <item
+        android:iconTint="@color/textcolorr"
+        android:title="Conditions">
+
+        <menu>
+
+            <item
+                android:id="@+id/privacy"
+                android:icon="@drawable/ic_text_fields_black_24dp"
+                android:title="Terms and Condition" />
+            <item
+                android:id="@+id/refund"
+                android:icon="@drawable/ic_report_black_24dp"
+                android:title="Refund Policy" />
+
+            <item
+                android:id="@+id/refundd"
+                android:iconTint="@android:color/holo_red_dark"
+                android:iconTintMode="screen"
+                android:title="App Version: 1.1" />
+
+        </menu>
+    </item>
+
+</menu>

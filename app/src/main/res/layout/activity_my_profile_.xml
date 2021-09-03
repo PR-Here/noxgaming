@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dback"
+    android:orientation="vertical"
+    tools:context="com.pankajranag.rana_gaming.com.pankaj.rana_gaming.Activity.MyProfile_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/toolbar_corners">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/patua_one"
+            android:text="Edit Profile"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+
+                android:orientation="vertical">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile_pic"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="0dp"
+                        android:src="@drawable/profileplaceholder"
+                        android:visibility="gone"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"
+
+
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/pb_profile_loader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminate="true"
+                        android:indeterminateTint="@color/colorAccent"
+                        android:indeterminateTintMode="src_atop"
+                        android:visibility="gone"
+
+                        tools:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_profile_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_photo_camera_black_24dp"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        app:layout_anchor="@+id/iv_profile_pic"
+                        app:layout_anchorGravity="end|bottom" />
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_coins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/text_border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_coins"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:drawable/screen_background_light_transparent"
+
+                        android:fontFamily="@font/patua_one"
+                        android:hint="First name"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/text_border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="First name"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/text_border">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="Last name"
+                        android:textSize="14dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/text_border"
+                    android:editable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="Email id"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/verify_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/patua_one"
+                        android:text="your Email not Verify? Verify"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/verify_email_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/patua_one"
+                        android:text="your Email is Verify! Congrats"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:visibility="gone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_pubgname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pubgname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="Pubg name"
+                        android:maxLength="15"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_pubgid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pubgid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="Pubg Id"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/text_border"
+                    android:clickable="false"
+                    android:editable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobileno"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="Mobile No."
+                        android:textSize="14dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_freecoins"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColorHint="#FFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/freecoins"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@android:color/white"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="Mobile No."
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFF"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_litecoins"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColorHint="#FFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/litecoins"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@android:color/white"
+                        android:fontFamily="@font/patua_one"
+                        android:hint="Mobile No."
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#FFF"
+                        android:textSize="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:autoText="true"
+                    android:background="@drawable/edittext_border"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/patua_one"
+                    android:gravity="center"
+                    android:hint="your Address"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="2000"
+                    android:maxLines="8"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/location"
+                    android:textSize="18dp"
+                    android:visibility="gone"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="36dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+
+
+                    <Button
+                        android:id="@+id/update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/custom_button"
+                        android:fontFamily="@font/patua_one"
+                        android:gravity="center"
+                        android:text="UPDATE"
+                        android:textColor="@color/colorPrimary"
+
+                        android:textSize="17dp" />
+
+                    <GridView
+                        android:id="@+id/GV_Images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                    </GridView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_add">
+
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</LinearLayout>

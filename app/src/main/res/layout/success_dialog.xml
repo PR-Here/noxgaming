@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/successDialogLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/arrow"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Profile Updated Successfully"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:fontFamily="@font/patua_one"
+        android:textColor="@color/darkRed">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank You..."
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:gravity="center"
+
+        android:textColor="@color/darkRed">
+    </TextView>
+</LinearLayout>

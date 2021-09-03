@@ -1,0 +1,175 @@
+{
+  "project_info": {
+    "project_number": "91837062166",
+    "firebase_url": "https://nox-gaming-4d28c.firebaseio.com",
+    "project_id": "nox-gaming-4d28c",
+    "storage_bucket": "nox-gaming-4d28c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91837062166:android:4a64bca67d5b9ef2d56937",
+        "android_client_info": {
+          "package_name": "com.mobisoftseo.rana_gaming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91837062166-5rm4gocl6h7f5tl6qg801mncnce07vpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobisoftseo.rana_gaming",
+            "certificate_hash": "ab9df46879276c96f7fc3fc6f1434b5bef33c400"
+          }
+        },
+        {
+          "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO2uWY9mQ3zM-NAPkTKQ4KFONraOuv5Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91837062166:android:c773e13a55b72dedd56937",
+        "android_client_info": {
+          "package_name": "com.pankaj.adminnox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91837062166-ogqau9i3ndmtbmp1jb11eaggscjqrcri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pankaj.adminnox",
+            "certificate_hash": "808f0330e12c4144ab5aa2087e6e2373c7435d3e"
+          }
+        },
+        {
+          "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO2uWY9mQ3zM-NAPkTKQ4KFONraOuv5Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91837062166:android:29ef6a5554f61b2ed56937",
+        "android_client_info": {
+          "package_name": "com.pankajrana.rana_gaming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91837062166-2n4d1do4ucsbi6nj28b5tcin67cueq7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pankajrana.rana_gaming",
+            "certificate_hash": "808f0330e12c4144ab5aa2087e6e2373c7435d3e"
+          }
+        },
+        {
+          "client_id": "91837062166-c5o2fev8ma4m3t5qdg8ro98ntdtrahaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pankajrana.rana_gaming",
+            "certificate_hash": "86e83b0362cf6d686e22fcf928a7f77ed9a7410f"
+          }
+        },
+        {
+          "client_id": "91837062166-pnrjnudifqdv7ioiqf683n2thbt99gq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pankajrana.rana_gaming",
+            "certificate_hash": "ab9df46879276c96f7fc3fc6f1434b5bef33c400"
+          }
+        },
+        {
+          "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO2uWY9mQ3zM-NAPkTKQ4KFONraOuv5Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91837062166:android:ae490fd567601f46d56937",
+        "android_client_info": {
+          "package_name": "com.pankajranag.rana_gaming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91837062166-6juajv58b60anbue01g1j9njp7c0s3du.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pankajranag.rana_gaming",
+            "certificate_hash": "ab9df46879276c96f7fc3fc6f1434b5bef33c400"
+          }
+        },
+        {
+          "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO2uWY9mQ3zM-NAPkTKQ4KFONraOuv5Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91837062166-lvq5capnfoe6e4slv2802ik1k0kv2dg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

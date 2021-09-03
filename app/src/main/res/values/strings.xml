@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">NOX GAMING</string>
+    <string name="invitation_title">NOX GAMING APPLICATION</string>
+    <string name="invitation_message">Download NOX GAMING App for fast making Money throw Playing</string>
+    <string name="invitation_deep_link">http://google.com</string>
+    <string name="invitation_custom_image">https://www.pubgmobile.com/en-US/m/images/slide_img1.jpg</string>
+    <string name="invitation_cta">NOX GAMING</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blankfragment">Hello blank fragment</string>
+
+    <string name="need_a_new_account">NEED A NEW ACCOUNT ?</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="log_out">Log Out</string>
+    <string name="welcome">Welcome To Lapit\n\t\t\t Chat App</string>
+    <string name="login">LOGIN</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="your_email">Your Email</string>
+    <string name="password">Password</string>
+    <string name="forceUpdateNote">Uninstall application and Install with New Latest Version</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="display_profile_name">Display Name</string>
+    <string name="last_seen">Last Seen</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="display_name">Display Name</string>
+    <string name="current_user_status">Current User Status</string>
+    <string name="total_friends">Total Friends</string>
+    <string name="send_friend_request">Send Friend Request</string>
+    <string name="decline_friend_request">Decline Friend Request</string>
+    <string name="msg_subscribed">Successful</string>
+    <string name="msg_subscribe_failed">Registration fail</string>
+    // ca-app-pub-5719685189848908~3308104983
+
+    //orignal ad unit
+    <string name="banner_add">ca-app-pub-4619435231045702/9565533712</string>
+    <string name="interstitial_add">ca-app-pub-4619435231045702/8060880355</string>
+
+
+    <!--    <string name="banner_add">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial_add">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <string name="Ad_mob_unit_id">ca-app-pub-3940256099942544/5224354917</string>
+
+    //rewardvideo
+    // a-app-pub-5719685189848908/8095973753
+    <string name="hints">PaymentType</string>
+
+    <string name="facebook_app_id">264942191525918</string>
+    <string name="fb_login_protocol_scheme">fb264942191525918</string>
+
+    <string name="title_onboarding_1">Welcome to Onboarding App !</string>
+    <string name="description_onboarding_1">Here is an open-source project which shows sweet &amp; original onboarding ViewPagers that follows Material Design Guidelines</string>
+
+    <string name="title_onboarding_2">Try AirBnB Lottie</string>
+    <string name="description_onboarding_2">We use Lottie Animations on our Intro to make it interactive &amp; pleasant. Did you already tried it ? If no, let\'s start now. It\'s just awesome</string>
+
+    <string name="title_onboarding_3">Code beautiful apps</string>
+    <string name="description_onboarding_3">Our mission is to make useful &amp; subtle apps. We love help people to save time with open-source stuffs, but we also make life easier by creating new things. Good Coding!</string>
+
+    <string name="start_text_advice">By continuing on this application you agree to our Terms of Use and Privacy Policy</string>
+
+    <string name="start">start</string>
+    <string name="skip">Skip</string>
+    <string name="finish">finish</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
+
+    <string name="title_on_boarding_first_slide">Welcome</string>
+    <string name="description_on_boarding_first_slide">Nox Gaming is a eSports Application. Where you can Earn Reward By play Your Favourite
+    Games</string>
+    <string name="title_on_boarding_second_slide">Click on your Favourite Games</string>
+    <string name="description_on_boarding_second_slide">Click on "Join Now" Button and Registered in Games</string>
+    <string name="title_on_boarding_third_slide">All is Good :=) Congratulation!</string>
+    <string name="description_on_boarding_third_slide">Now Click on Get Started Button and Play Daily Tournament. Best Of Luck</string>
+    <string name="title_button">Get started</string>
+</resources>

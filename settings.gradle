@@ -1,0 +1,3 @@
+include ':app'
+rootProject.name='rana_gaming'
+
